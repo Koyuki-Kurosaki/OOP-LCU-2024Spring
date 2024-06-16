@@ -17,6 +17,7 @@ RoomInfo::RoomInfo(QWidget *parent, Room room , RoomList *roomList) :
     ui->setupUi(this);
 
     _room = room;
+    _state = room.getState();
     this->setWindowTitle(QString::fromStdString(room.getName()));
     //垂直布局
     QVBoxLayout *layout = new QVBoxLayout(this);
@@ -54,6 +55,7 @@ RoomInfo::RoomInfo(QWidget *parent, Room room , RoomList *roomList) :
     QPushButton *finishButton = new QPushButton(this);
     layout->addWidget(finishButton);
     finishButton->setText("完成");
+
     _editedName = lineEdit->text().toStdString();
     _editedPrice = lineEdit1->text().toInt();
     _editedArea = lineEdit2->text().toInt();

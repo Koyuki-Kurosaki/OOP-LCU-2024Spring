@@ -28,6 +28,7 @@ public slots:
 private:
     Ui::RoomList *ui;
     map<string, Room> _roomMap;
+    RoomManager _roomManager;
 
 private slots:
     void on_pushButton_exit_clicked();

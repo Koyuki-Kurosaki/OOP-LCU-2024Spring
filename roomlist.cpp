@@ -13,6 +13,7 @@
 RoomList::RoomList(QWidget *parent) :
         QWidget(parent), ui(new Ui::RoomList) {
     ui->setupUi(this);
+
     refreshRooms();
 }
 
@@ -21,8 +22,8 @@ RoomList::~RoomList() {
 }
 
 void RoomList::refreshRooms() {
-    RoomManager roomManager;
-    _roomMap = roomManager.getRoom();
+    _roomManager = RoomManager();
+    _roomMap = _roomManager.getRoom();
     int total = _roomMap.size();
     int rowColUnderNumber;
     if (total<=15) {
@@ -98,6 +99,7 @@ void RoomList::refreshRooms() {
     button->setFixedSize(buttonSize, buttonSize);
     button->setText("+添加房间");
     ui->gridLayout->addWidget(button, i / rowColUnderNumber, i % rowColUnderNumber);
+    connect(button, &QPushButton::clicked, this, &RoomList::addNewRoom);
 }
 
 void RoomList::on_pushButton_exit_clicked() {
@@ -105,6 +107,5 @@ void RoomList::on_pushButton_exit_clicked() {
 }
 
 void RoomList::addNewRoom() {
-
 
 }
