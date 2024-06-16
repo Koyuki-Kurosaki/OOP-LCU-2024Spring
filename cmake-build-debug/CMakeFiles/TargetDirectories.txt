@@ -1,0 +1,5 @@
+/Users/ximing/CLionProjects/OOP-LCU-2024Spring/cmake-build-debug/CMakeFiles/OOP_LCU_2024Spring.dir
+/Users/ximing/CLionProjects/OOP-LCU-2024Spring/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ximing/CLionProjects/OOP-LCU-2024Spring/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/ximing/CLionProjects/OOP-LCU-2024Spring/cmake-build-debug/CMakeFiles/OOP_LCU_2024Spring_autogen_timestamp_deps.dir
+/Users/ximing/CLionProjects/OOP-LCU-2024Spring/cmake-build-debug/CMakeFiles/OOP_LCU_2024Spring_autogen.dir

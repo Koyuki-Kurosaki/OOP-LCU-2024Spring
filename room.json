@@ -1,0 +1,82 @@
+[
+	{
+		"area" : 11,
+		"bedNum" : 111,
+		"name" : "\u592a\u548c\u6bbf",
+		"num" : "1",
+		"price" : 111,
+		"state" : 0
+	},
+	{
+		"area" : 245,
+		"bedNum" : 3,
+		"name" : "\u897f\u516d\u5bab",
+		"num" : "10",
+		"price" : 200,
+		"state" : 1
+	},
+	{
+		"area" : 130,
+		"bedNum" : 2,
+		"name" : "\u4e2d\u548c\u6bbf",
+		"num" : "2",
+		"price" : 100,
+		"state" : 0
+	},
+	{
+		"area" : 201,
+		"bedNum" : 3,
+		"name" : "\u4fdd\u548c\u6bbf",
+		"num" : "3",
+		"price" : 200,
+		"state" : 0
+	},
+	{
+		"area" : 245,
+		"bedNum" : 3,
+		"name" : "\u4e7e\u6e05\u5bab",
+		"num" : "4",
+		"price" : 200,
+		"state" : 1
+	},
+	{
+		"area" : 245,
+		"bedNum" : 3,
+		"name" : "\u4ea4\u6cf0\u6bbf",
+		"num" : "5",
+		"price" : 200,
+		"state" : 0
+	},
+	{
+		"area" : 245,
+		"bedNum" : 3,
+		"name" : "\u5764\u5b81\u5bab",
+		"num" : "6",
+		"price" : 200,
+		"state" : 0
+	},
+	{
+		"area" : 245,
+		"bedNum" : 3,
+		"name" : "\u517b\u5fc3\u6bbf",
+		"num" : "7",
+		"price" : 200,
+		"state" : 0
+	},
+	{
+		"area" : 245,
+		"bedNum" : 3,
+		"name" : "\u6148\u5b81\u5bab",
+		"num" : "8",
+		"price" : 200,
+		"state" : 0
+	},
+	{
+		"area" : 245,
+		"bedNum" : 3,
+		"name" : "\u4e1c\u516d\u5bab",
+		"num" : "9",
+		"price" : 200,
+		"state" : 1
+	}
+]

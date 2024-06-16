@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "OOP_LCU_2024Spring",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "OOP_LCU_2024Spring::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OOP_LCU_2024Spring-Debug-85d0d21e8f8ac48f4966.json",
+					"name" : "OOP_LCU_2024Spring",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "OOP_LCU_2024Spring_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OOP_LCU_2024Spring_autogen-Debug-7aa9e00194f537283a2c.json",
+					"name" : "OOP_LCU_2024Spring_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "OOP_LCU_2024Spring_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OOP_LCU_2024Spring_autogen_timestamp_deps-Debug-c95463a77622b4f5f197.json",
+					"name" : "OOP_LCU_2024Spring_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/ximing/CLionProjects/OOP-LCU-2024Spring/cmake-build-debug",
+		"source" : "/Users/ximing/CLionProjects/OOP-LCU-2024Spring"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
