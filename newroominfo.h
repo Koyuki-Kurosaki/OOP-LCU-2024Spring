@@ -6,7 +6,9 @@
 #define OOP_LCU_2024SPRING_NEWROOMINFO_H
 
 #include <QWidget>
+#include "RoomManager.h"
 
+class RoomList;
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class NewRoomInfo; }
@@ -16,12 +18,24 @@ class NewRoomInfo : public QWidget {
 Q_OBJECT
 
 public:
-    explicit NewRoomInfo(QWidget *parent = nullptr);
+    explicit NewRoomInfo(QWidget *parent, RoomList *roomList);
 
     ~NewRoomInfo() override;
 
+public slots:
+    void onTextChanged(const QString& text);
+    void onTextChanged1(const QString& text);
+    void onTextChanged2(const QString& text);
+    void onTextChanged3(const QString& text);
+    void addNewRoom();
+
 private:
     Ui::NewRoomInfo *ui;
+    RoomManager _roomManager;
+    int _editedPrice;
+    int _editedBedNum;
+    int _editedArea;
+    string _editedName;
 };
 
 

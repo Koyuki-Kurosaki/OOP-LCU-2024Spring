@@ -8,11 +8,11 @@
 		"state" : 0
 	},
 	{
-		"area" : 0,
-		"bedNum" : 0,
+		"area" : 11,
+		"bedNum" : 3,
 		"name" : "\u897f\u516d\u5bab",
 		"num" : "10",
-		"price" : 200,
+		"price" : 201,
 		"state" : 1
 	},
 	{

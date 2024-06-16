@@ -9,6 +9,7 @@
 #include <QPushButton>
 
 #include "roominfo.h"
+#include "newroominfo.h"
 
 RoomList::RoomList(QWidget *parent) :
         QWidget(parent), ui(new Ui::RoomList) {
@@ -107,5 +108,15 @@ void RoomList::on_pushButton_exit_clicked() {
 }
 
 void RoomList::addNewRoom() {
+    NewRoomInfo *newRoomInfo = new NewRoomInfo(nullptr, this);
+    newRoomInfo->show();
+}
 
+void RoomList::cleanLayout() {
+    //清除所有按钮
+    QLayoutItem *child;
+    while ((child = ui->gridLayout->takeAt(0)) != 0) {
+        delete child->widget();
+        delete child;
+    }
 }

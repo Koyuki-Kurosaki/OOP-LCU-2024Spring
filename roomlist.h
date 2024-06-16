@@ -24,6 +24,8 @@ public:
 public slots:
     void addNewRoom();
     void refreshRooms();
+    //加这个方法是因为删除的时候，新旧按钮会叠在一起
+    void cleanLayout();
 
 private:
     Ui::RoomList *ui;

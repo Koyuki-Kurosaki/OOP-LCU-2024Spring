@@ -37,18 +37,23 @@ RoomInfo::RoomInfo(QWidget *parent, Room room , RoomList *roomList) :
     layout->addWidget(deleteButton);
     deleteButton->setText("删除");
     connect(deleteButton, &QPushButton::clicked, this, &RoomInfo::deleteRoom);
+
     //修改客房信息
     QLineEdit *lineEdit = new QLineEdit(this);
     layout->addWidget(lineEdit);
+    _editedName = room.getName();
     lineEdit->setText(QString::fromStdString(room.getName()));
     QLineEdit *lineEdit1 = new QLineEdit(this);
     layout->addWidget(lineEdit1);
+    _editedPrice = room.getPrice();
     lineEdit1->setText(QString::number(room.getPrice()));
     QLineEdit *lineEdit2 = new QLineEdit(this);
     layout->addWidget(lineEdit2);
+    _editedArea = room.getArea();
     lineEdit2->setText(QString::number(room.getArea()));
     QLineEdit *lineEdit3 = new QLineEdit(this);
     layout->addWidget(lineEdit3);
+    _editedBedNum = room.getBedNum();
     lineEdit3->setText(QString::number(room.getBedNum()));
 
     //完成
@@ -56,6 +61,7 @@ RoomInfo::RoomInfo(QWidget *parent, Room room , RoomList *roomList) :
     layout->addWidget(finishButton);
     finishButton->setText("完成");
 
+    // lineEdit修改生效
     connect(lineEdit, &QLineEdit::textChanged, this, &RoomInfo::onTextChanged);
     connect(lineEdit1, &QLineEdit::textChanged, this, &RoomInfo::onTextChanged1);
     connect(lineEdit2, &QLineEdit::textChanged, this, &RoomInfo::onTextChanged2);
@@ -64,6 +70,8 @@ RoomInfo::RoomInfo(QWidget *parent, Room room , RoomList *roomList) :
     connect(finishButton, &QPushButton::clicked, this, &RoomInfo::updateRoomTexts);
     //关闭窗口
     connect(finishButton, &QPushButton::clicked, this, &RoomInfo::close);
+    //刷新房间列表
+    connect(finishButton, &QPushButton::clicked, roomList, &RoomList::cleanLayout); //清空布局
     connect(finishButton, &QPushButton::clicked, roomList, &RoomList::refreshRooms);
 
 }
