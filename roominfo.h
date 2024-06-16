@@ -27,6 +27,10 @@ public slots:
     void checkOut();
     void deleteRoom();
     void updateRoomTexts();
+    void onTextChanged(const QString& text);
+    void onTextChanged1(const QString& text);
+    void onTextChanged2(const QString& text);
+    void onTextChanged3(const QString& text);
 
 private:
     Ui::RoomInfo *ui;

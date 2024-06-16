@@ -56,10 +56,11 @@ RoomInfo::RoomInfo(QWidget *parent, Room room , RoomList *roomList) :
     layout->addWidget(finishButton);
     finishButton->setText("完成");
 
-    _editedName = lineEdit->text().toStdString();
-    _editedPrice = lineEdit1->text().toInt();
-    _editedArea = lineEdit2->text().toInt();
-    _editedBedNum = lineEdit3->text().toInt();
+    connect(lineEdit, &QLineEdit::textChanged, this, &RoomInfo::onTextChanged);
+    connect(lineEdit1, &QLineEdit::textChanged, this, &RoomInfo::onTextChanged1);
+    connect(lineEdit2, &QLineEdit::textChanged, this, &RoomInfo::onTextChanged2);
+    connect(lineEdit3, &QLineEdit::textChanged, this, &RoomInfo::onTextChanged3);
+
     connect(finishButton, &QPushButton::clicked, this, &RoomInfo::updateRoomTexts);
     //关闭窗口
     connect(finishButton, &QPushButton::clicked, this, &RoomInfo::close);
@@ -84,4 +85,21 @@ void RoomInfo::deleteRoom() {
 }
 void RoomInfo::updateRoomTexts() {
     _roomManager.updateRoomInfo(_room.getNum(),_editedName,_editedPrice,_editedArea,_editedBedNum,_state);
+}
+
+void RoomInfo::onTextChanged(const QString& text)
+{
+    _editedName = text.toStdString();
+}
+void RoomInfo::onTextChanged1(const QString& text)
+{
+    _editedPrice = text.toInt();
+}
+void RoomInfo::onTextChanged2(const QString& text)
+{
+    _editedArea = text.toInt();
+}
+void RoomInfo::onTextChanged3(const QString& text)
+{
+    _editedBedNum = text.toInt();
 }
